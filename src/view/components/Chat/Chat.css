@@ -1,0 +1,47 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+.top{
+    flex:10%;
+    border:1px solid black;
+}
+.middle{
+    flex:78%;
+    border:1px solid black;
+}
+
+/* Bottom part of Chat Section */
+.bottom{
+    flex:12%;
+    display: flex;
+    flex-direction: row;
+    border:1px solid black;
+}
+.left{
+    flex:8%;
+    border:1px solid black;
+}
+.center{
+    flex:80%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+}
+.center input{
+    width: 90%;
+    border:1px solid red;
+}
+.right{
+    flex:12%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+}
