@@ -1,5 +1,5 @@
 import React from 'react'
-import ActiveIcon from "../assets/activeIcon.png"
+import ActiveIcon from "../../../assets/activeIcon.png"
 import "./Favourites.css"
 
 interface FavouritesProps {
@@ -18,7 +18,9 @@ const Favourites = (props: FavouritesProps): JSX.Element => {
                 <img className='favProfileIcon' src={icon} />
                 <img className='favActiveIcon' src={ActiveIcon} />
             </div>
-            <div className="favNameContainer"><span className='favName'>{name}</span></div>
+            <div className='favNameContainer'>
+                <span className='favName'>{name}</span>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,123 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #303841;
+}
+
+.login-card {
+    width: 25%;
+    padding: 3%;
+    background-color: #262e35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80px;
+    padding-bottom: 4%;
+}
+
+::placeholder {
+    color: #a6b0cf;
+}
+
+.label {
+    height: 40%;
+    width: 100%;
+    padding-bottom: 1%;
+    color: #a6b0cf;
+    /* border: 1px solid green; */
+}
+
+.icon {
+    background-color: #272c3b;
+}
+
+.i-input {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.i-input div {
+    width: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4b4d52;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.i-input input {
+    width: 87%;
+    height: 1;
+    border: 1px solid #4b4d52;
+    border-left: none;
+    background-color: transparent;
+    color: #a6b0cf;
+    padding-left: 3%;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.i-input input:focus {
+    outline: 1px solid rgb(246, 147, 147);
+}
+
+.remember-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 4%;
+    padding-top: 1%;
+}
+
+.submit {
+    width: 100%;
+    height: 17%;
+    /* border: 1px solid red; */
+}
+
+.submit-btn {
+    width: 100%;
+    height: 90%;
+    background-color: #7269ef;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: medium;
+}
+.submit-btn:hover{
+    cursor: pointer;
+}
+.signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+    margin-top: 1%;
+    /* border: 1px solid wheat; */
+}
+
+.signup span {
+    color: #a6b0cf;
+    padding-right: 2%;
+}
+
+.signup a {
+    color: #7269ef;
+    text-decoration: none;
+}

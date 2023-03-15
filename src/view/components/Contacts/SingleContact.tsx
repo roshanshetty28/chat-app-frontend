@@ -1,5 +1,5 @@
 import React from 'react'
-import ActiveIcon from "../assets/activeIcon.png"
+import ActiveIcon from "../../../assets/activeIcon.png"
 import "./SingleContact.css"
 
 interface ContactProps {
@@ -20,8 +20,8 @@ const SingleContact = (props: ContactProps): JSX.Element => {
                 <img className='active' src={ActiveIcon} />
             </span>
             <span style={{ display: 'flex', flexDirection: 'column', padding: '2px', width: '85%' }}>
-                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}><strong>{name}</strong></div>
-                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{lastMessage}</div>
+                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis',color:"#e1e9f1" }}><strong>{name}</strong></div>
+                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', color:"#646c7d" }}>{lastMessage}</div>
             </span>
         </span>
     )

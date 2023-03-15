@@ -1,0 +1,37 @@
+.welcome {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.container {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.welcome-icon {
+    height: 70%;
+    /* border: 1px solid rgba(155, 178, 40, 0.97); */
+}
+
+.welcome-icon img {
+    height: 100%;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+}
+
+.header {
+    color: #e1e9f1;
+    font-weight: bold;
+    font-size: large;
+}
+
+.text {
+    color: #646c7d;
+}

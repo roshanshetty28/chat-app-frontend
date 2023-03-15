@@ -1,6 +1,10 @@
-.main{
+.main {
     display: flex;
     flex-direction: row;
-    border:5px solid rgb(157, 21, 21);
-    height: 99.7vh;
+    /* border:5px solid rgb(157, 21, 21); */
+    height: 100vh;
+}
+
+::placeholder {
+    color: #646c7d;
 }

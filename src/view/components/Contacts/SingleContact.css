@@ -1,14 +1,16 @@
 .singleContact {
     display: flex;
     flex-direction: row;
-    border-radius: 3px;
+    border-radius: 5px;
     margin: 5px;
     padding: 3px;
     overflow: hidden;
+    cursor: pointer;
+    /* border: 1px solid white */
 }
 
 .singleContact:hover {
-    background-color: blueviolet;
+    background-color: #36404a;
 }
 
 .icon {
@@ -16,7 +18,7 @@
     overflow: hidden;
     border-radius: 50%;
     width: 80%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .active {
