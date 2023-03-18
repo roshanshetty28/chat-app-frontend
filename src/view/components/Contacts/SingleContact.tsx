@@ -20,8 +20,8 @@ const SingleContact = (props: ContactProps): JSX.Element => {
                 <img className='active' src={ActiveIcon} />
             </span>
             <span style={{ display: 'flex', flexDirection: 'column', padding: '2px', width: '85%' }}>
-                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis',color:"#e1e9f1" }}><strong>{name}</strong></div>
-                <div style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis', color:"#646c7d" }}>{lastMessage}</div>
+                <div className='single-contact-name'><strong>{name}</strong></div>
+                <div className='single-contact-lastMsg'>{lastMessage}</div>
             </span>
         </span>
     )

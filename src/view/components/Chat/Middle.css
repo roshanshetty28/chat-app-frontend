@@ -2,4 +2,7 @@
     /* border: 1px solid black; */
     padding: 1%;
     overflow-y: auto;
+    /* background-image: url(../../../assets/wall1.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }

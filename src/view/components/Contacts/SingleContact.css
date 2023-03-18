@@ -9,8 +9,14 @@
     /* border: 1px solid white */
 }
 
-.singleContact:hover {
+#dark .singleContact:hover {
     background-color: #36404a;
+    transform: scale(1.01);
+}
+
+#light .singleContact:hover {
+    background-color: #e6ebf5;
+    transform: scale(1.01);
 }
 
 .icon {
@@ -29,4 +35,32 @@
     top: 70%;
     left: 65%;
     border: 1px solid black;
+}
+
+#dark .single-contact-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #e1e9f1;
+}
+
+#light .single-contact-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #3c4145;
+}
+
+#dark .single-contact-lastMsg {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #646c7d;
+}
+
+#light .single-contact-lastMsg {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #828794;
 }

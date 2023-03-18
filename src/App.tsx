@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import Login from './view/pages/Login';
 import Main from './view/pages/Main';
-import { ThemeContext } from './constants/Theme';
+import { ThemeContext, themeType } from './constants/Theme';
 import Register from './view/pages/Register';
 
 function App() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState<themeType>('light')
   const toggleTheme = () => {
     setTheme((cur) => cur === "light" ? "dark" : "light")
   }
   return (
-    // <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <div id={theme}>
       <Main />
-    // {/* </ThemeContext.Provider> */}
+      </div>
+    </ThemeContext.Provider>
     // <Login/>
     // <Register/>
   );

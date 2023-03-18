@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Chat.css"
 import Image from "../../../assets/logo512.png"
+import rosh from "../../../assets/rosh.jpg"
 import { MoreVertical } from "react-feather"
 import Welcome from "./Welcome"
 import Middle from './Middle'
@@ -21,7 +22,7 @@ const Chat = (): JSX.Element => {
         <div className="top">
           <div className="top-left">
             <div className="chat-profile-img">
-              <img src={Image} />
+              <img src={rosh} />
             </div>
             <div className="chat-profile-name">rosh</div>
           </div>

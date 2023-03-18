@@ -34,9 +34,14 @@
     border: none;
 }
 
-.emoji-input:hover {
+#dark .emoji-input:hover {
     cursor: pointer;
     background-color: #36404a;
+}
+
+#light .emoji-input:hover {
+    cursor: pointer;
+    background-color: #e6ebf5;
 }
 
 .bottom-center {
@@ -49,7 +54,7 @@
     /* border:1px solid black; */
 }
 
-.inputelem {
+#dark .inputelem {
     width: 100%;
     border: none;
     height: 90%;
@@ -58,6 +63,17 @@
     padding-left: 1%;
     font-size: medium;
     color: #e1e9f1;
+}
+
+#light .inputelem {
+    width: 100%;
+    border: none;
+    height: 90%;
+    border-radius: 4px;
+    background-color: #e6ebf5;
+    padding-left: 1%;
+    font-size: medium;
+    color: #495057;
 }
 
 .bottom-center input:focus {
@@ -83,13 +99,20 @@
     border: none;
 }
 
-.chat-attach-btn:hover {
+#dark .chat-attach-btn:hover {
     cursor: pointer;
     background-color: #36404a;
 }
-.chat-attach-btn input{
+
+#light .chat-attach-btn:hover {
+    cursor: pointer;
+    background-color: #e6ebf5;
+}
+
+.chat-attach-btn input {
     display: none;
 }
+
 .chat-attach-btn-cont {
     transform: rotate(-45deg);
 }
@@ -105,7 +128,12 @@
     background-color: transparent;
 }
 
-.chat-send-btn:hover {
+#dark .chat-send-btn:hover {
     cursor: pointer;
     background-color: #36404a;
+}
+
+#light .chat-send-btn:hover {
+    cursor: pointer;
+    background-color: #e6ebf5;
 }

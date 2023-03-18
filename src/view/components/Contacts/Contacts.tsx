@@ -4,20 +4,21 @@ import { Search } from "react-feather"
 import SingleContact from './SingleContact'
 import Image from "../../../assets/logo512.png"
 import Favourites from './Favourites'
+import rosh from "../../../assets/rosh.jpg"
 
-const data = [{ name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhvkhvoolbolboljlojblohutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhvkhvoolbolboljlojblohutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhvkhvoolbolboljlojblohutgt', icon: Image }]
+const data = [{ name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: rosh }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhvkhvoolbolboljlojblohutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhvkhvoolbolboljlojblohutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhutgt', icon: Image }, { name: 'jgvdic', lastMessage: 'jgvikvikgogolhgujkujollujhljuhvkhvoolbolboljlojblohutgt', icon: Image }]
 
-const favourites = [{ name: 'jgvkjllllhlpihpihpdic', icon: Image }, { name: 'jgvdic', icon: Image }, { name: 'jgvdic', icon: Image }, { name: 'jgvdic', icon: Image }]
+const favourites = [{ name: 'jgvkjllllhlpihpihpdic', icon: rosh }, { name: 'jgvdic', icon: Image }, { name: 'jgvdic', icon: Image }, { name: 'jgvdic', icon: Image }]
 
 const Contacts = (): JSX.Element => {
     return (
         <div className='contact'>
             <div className='title'>
-                <span style={{ color: '#e1e9f1' }}>Chats</span>
+                <span className='chats'>Chats</span>
             </div>
             <div className='searchsection'>
                 <div className="searchinput">
-                    <Search style={{color:'#e1e9f1',padding:'2%'}}/>
+                    <Search className='search-icon'/>
                     <input className="serchinputelem" type="search" placeholder='Search users' />
                 </div>
             </div>
@@ -27,7 +28,7 @@ const Contacts = (): JSX.Element => {
                 </div>
             </div>
             <div className='recent'>
-                <span style={{ fontSize: '17px', paddingLeft: '15px', paddingTop: '5px', paddingBottom: '3px', color: '#e1e9f1' }}><strong>Recent</strong></span>
+                <span className='recent-header'><strong>Recent</strong></span>
                 <div className="recentContacts">
                     <span>{data.map((user, index) => <SingleContact data={user} key={index} />)}</span>
                 </div>

@@ -1,4 +1,4 @@
-.contact {
+#dark .contact {
     /* border: 1px solid black; */
     width: 25%;
     display: flex;
@@ -7,11 +7,27 @@
     padding: .7%;
 }
 
+#light .contact {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fb;
+    padding: .7%;
+}
+
 .title {
     /* border: 1px solid black; */
     font-weight: 900;
     font-size: x-large;
     padding-left: 2%;
+}
+
+#light .chats {
+    color: #3c4145;
+}
+
+#dark .chats {
+    color: #e6ebf5
 }
 
 .searchsection {
@@ -23,7 +39,7 @@
     margin-bottom: 10px;
 }
 
-.searchinput {
+#dark .searchinput {
     border: none;
     border-radius: 6px;
     display: flex;
@@ -36,13 +52,43 @@
     background-color: #36404a;
 }
 
+#light .searchinput {
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #e6ebf5;
+}
+
 .searchinput:focus-within {
     border: 1px solid #a6b0cf;
 }
 
-.serchinputelem {
+#dark .search-icon {
+    color: #e1e9f1;
+    padding: 2%;
+}
+
+#light .search-icon {
+    color: #495057;
+    padding: 2%;
+}
+
+#dark .serchinputelem {
     width: 100%;
     color: #e1e9f1;
+    border: none;
+    background-color: transparent;
+}
+
+#light .serchinputelem {
+    width: 100%;
+    color: #495057;
     border: none;
     background-color: transparent;
 }
@@ -73,7 +119,20 @@
     display: flex;
     flex-direction: column;
 }
-
+#dark .recent-header{
+    font-size: 17px;
+     padding-left: 15px;
+      padding-top: 5px;
+       padding-bottom: 3px;
+        color: #e1e9f1;
+}
+#light .recent-header{
+    font-size: 17px;
+     padding-left: 15px;
+      padding-top: 5px;
+       padding-bottom: 3px;
+       color: #3c4145;
+}
 .recentContacts {
     /* border: 1px solid black; */
     overflow-y: auto;

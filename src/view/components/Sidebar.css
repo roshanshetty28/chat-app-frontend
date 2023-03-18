@@ -1,4 +1,4 @@
-.sidebar {
+#dark .sidebar {
     /* border:1px solid black; */
     width: 5%;
     background-color: #36404a;
@@ -6,6 +6,18 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1%;
+}
+
+#light .sidebar {
+    /* border:1px solid black; */
+    width: 5%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1%;
 }
 
 .sidebar-top {
@@ -20,15 +32,15 @@
 
 .sidebar-bottom {
     /* border: 1px solid black; */
-    height: 10%;
+    height: 12%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.bottom-icons {
+.theme-icon {
     border: none;
     border-radius: 50%;
     line-height: 1%;
@@ -36,8 +48,41 @@
     padding: 15%;
 }
 
-.bottom-icons:hover {
+#dark .theme-icon:hover {
     background-color: #646c7d;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#light .theme-icon:hover {
+    background-color: #e6ebf5;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.setting-button {
+    border: none;
+    border-radius: 50%;
+    line-height: 1%;
+    background-color: transparent;
+    padding: 15%;
+}
+
+#dark .settings-icon {
+    color: #e1e9f1;
+}
+
+#light .settings-icon {
+    color: #2b2f32;
+}
+
+#dark .setting-button:hover {
+    background-color: #646c7d;
+    cursor: pointer;
+}
+
+#light .setting-button:hover {
+    background-color: #e6ebf5;
     cursor: pointer;
 }
 

@@ -4,14 +4,18 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding:1%;
+    padding: 1%;
     margin: 1%;
     cursor: pointer;
     /* border: 1px solid red; */
 }
 
+.favourite:hover {
+    transform: scale(1.05);
+}
+
 .favImgContainer {
-    width:100%;
+    width: 100%;
     height: 60%;
     display: flex;
     flex-direction: row;
@@ -21,6 +25,7 @@
     padding-top: 7%;
     border-radius: 50%;
     z-index: 1;
+    line-height: 4%;
     /* border: 3px solid rgb(50, 38, 181); */
 }
 
@@ -39,7 +44,7 @@
     /* border: 1px solid greenyellow; */
 }
 
-.favNameContainer {
+#dark .favNameContainer {
     width: 100%;
     height: 50%;
     display: flex;
@@ -53,7 +58,21 @@
     /* border: 10px solid red */
 }
 
-.favName {
+#light .favNameContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    border-radius: 4px;
+    background-color: #e6ebf5;
+    /* border: 10px solid red */
+}
+
+#dark .favName {
     padding-top: 20%;
     padding-left: 10%;
     padding-right: 5%;
@@ -62,7 +81,22 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color:#e1e9f1;
+    color: #e1e9f1;
+    /* background-color: red; */
+    /* background-color: chartreuse;
+    border: 1px solid blue; */
+}
+
+#light .favName {
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 5%;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #3c4145;
     /* background-color: red; */
     /* background-color: chartreuse;
     border: 1px solid blue; */
