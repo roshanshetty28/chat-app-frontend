@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ActiveIcon from "../../../assets/activeIcon.png"
+import { ChatContext } from '../../../constants/Chat'
 import "./SingleContact.css"
 
 interface ContactProps {
@@ -13,8 +14,12 @@ interface ContactProps {
 const SingleContact = (props: ContactProps): JSX.Element => {
     const { data } = props
     const { name, lastMessage, icon } = data
+    const chatContext=useContext(ChatContext)
+    const handleChat=()=>{
+        chatContext?.setChat(name,icon)
+    }
     return (
-        <span className='singleContact'>
+        <span className='singleContact' onClick={handleChat}>
             <span style={{ minWidth: '15%', display: 'flex', justifyContent: 'center', flexDirection: 'row', alignItems: 'center', position: 'relative' }}>
                 <img className="icon" src={icon} />
                 <img className='active' src={ActiveIcon} />

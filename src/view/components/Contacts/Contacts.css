@@ -97,6 +97,19 @@
     outline: none;
 }
 
+.search-result-container {
+    width: initial;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    margin-left: 0px;
+    padding: 2%;
+    padding-left: 0px;
+    overflow-y: auto;
+    width: 390px;
+    /* border: 1px solid rgb(37, 188, 219); */
+}
+
 .favourites {
     /* border: 1px solid black; */
     height: 20%;
@@ -119,20 +132,23 @@
     display: flex;
     flex-direction: column;
 }
-#dark .recent-header{
+
+#dark .recent-header {
     font-size: 17px;
-     padding-left: 15px;
-      padding-top: 5px;
-       padding-bottom: 3px;
-        color: #e1e9f1;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: #e1e9f1;
 }
-#light .recent-header{
+
+#light .recent-header {
     font-size: 17px;
-     padding-left: 15px;
-      padding-top: 5px;
-       padding-bottom: 3px;
-       color: #3c4145;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: #3c4145;
 }
+
 .recentContacts {
     /* border: 1px solid black; */
     overflow-y: auto;

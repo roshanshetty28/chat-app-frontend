@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ActiveIcon from "../../../assets/activeIcon.png"
+import { ChatContext } from '../../../constants/Chat'
 import "./Favourites.css"
 
 interface FavouritesProps {
@@ -12,8 +13,12 @@ interface FavouritesProps {
 const Favourites = (props: FavouritesProps): JSX.Element => {
     const { data } = props
     const { name, icon } = data
+    const chatContext=useContext(ChatContext)
+    const handleChat=()=>{
+        chatContext?.setChat(name,icon)
+    }
     return (
-        <div className='favourite'>
+        <div className='favourite' onClick={handleChat}>
             <div className='favImgContainer'>
                 <img className='favProfileIcon' src={icon} />
                 <img className='favActiveIcon' src={ActiveIcon} />

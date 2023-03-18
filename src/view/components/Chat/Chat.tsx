@@ -1,40 +1,35 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Chat.css"
-import Image from "../../../assets/logo512.png"
-import rosh from "../../../assets/rosh.jpg"
 import { MoreVertical } from "react-feather"
 import Welcome from "./Welcome"
 import Middle from './Middle'
 import Bottom from "./Bottom"
+import { ChatContext } from '../../../constants/Chat'
 
 const Chat = (): JSX.Element => {
+  const contact = useContext(ChatContext)
   const [showMore, setShowMore] = useState<Boolean>(false)
-  const [showChat, setShowChat] = useState<Boolean>(false)
   const handleShowMore = () => {
     setShowMore(!showMore)
   }
-  const handleShowChat = () => {
-    setShowChat(!showChat)
-  }
   return (
     <div className='chat'>
-      {showChat ? <Welcome /> : <>
+      {contact?.chat.name === "" ? <Welcome /> : <>
         <div className="top">
           <div className="top-left">
-            <div className="chat-profile-img">
-              <img src={rosh} />
-            </div>
-            <div className="chat-profile-name">rosh</div>
+            <img src={contact?.chat.profile} className="chat-profile-img" />
+            <div className="chat-profile-name"><strong>{contact?.chat.name}</strong></div>
           </div>
           <div className="top-right">
             <div className={showMore ? "dropdown open" : "dropdown"}>
+              <button>Pin Contact</button>
               <button>Clear Chat</button>
               <button>Block</button>
               <button>Report</button>
             </div>
-            <button className='more-button' onClick={handleShowMore}><MoreVertical style={{ color: '#e1e9f1' }} /></button></div>
+            <button className='more-button' onClick={handleShowMore}><MoreVertical className='more-icon' /></button></div>
         </div>
-        <Middle/>
+        <Middle />
         <Bottom />
       </>}
     </div>
