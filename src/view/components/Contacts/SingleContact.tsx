@@ -22,7 +22,7 @@ const SingleContact = (props: ContactProps): JSX.Element => {
         <span className='singleContact' onClick={handleChat}>
             <span style={{ minWidth: '15%', display: 'flex', justifyContent: 'center', flexDirection: 'row', alignItems: 'center', position: 'relative' }}>
                 <img className="icon" src={icon} />
-                <img className='active' src={ActiveIcon} />
+                <div className="active-sign"></div>
             </span>
             <span style={{ display: 'flex', flexDirection: 'column', padding: '2px', width: '85%' }}>
                 <div className='single-contact-name'><strong>{name}</strong></div>

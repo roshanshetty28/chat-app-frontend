@@ -7,6 +7,7 @@
     padding: 1%;
     margin: 1%;
     cursor: pointer;
+    width: 25%;
     /* border: 1px solid red; */
 }
 
@@ -32,15 +33,17 @@
 .favProfileIcon {
     width: 70%;
     border-radius: 50%;
+    box-shadow: 0 0 0 .5px #bfbcbb;
     /* border: 1px solid black; */
 }
 
 .favActiveIcon {
     position: absolute;
-    width: 10%;
-    border-radius: 50%;
+    line-height: 10%;
+    height: 30%;
     top: 80%;
     left: 65%;
+    border-radius: 50%;
     /* border: 1px solid greenyellow; */
 }
 

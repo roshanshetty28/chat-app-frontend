@@ -9,16 +9,20 @@
 #light ::-webkit-scrollbar {
     width: 9px;
 }
+
 #dark ::-webkit-scrollbar {
     width: 9px;
 }
+
 /* Track */
 #light ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 #dark ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 /* Handle */
 #dark ::-webkit-scrollbar-thumb {
     background: #888;
@@ -43,4 +47,18 @@
 
 #light ::placeholder {
     color: #949ba8;
+}
+
+.active-sign {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 75%;
+    left: 66%;
+    height: 15%;
+    width: 15%;
+    background-color: #72e257;
+    line-height: 20%;
+    box-shadow: 0 0 0 1px #5e5c5b;
+    /* border: 1px solid black; */
 }

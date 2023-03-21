@@ -1,8 +1,25 @@
-.middle {
-    /* border: 1px solid black; */
-    padding: 1%;
+#dark .middle {
+    padding: 10px;
     overflow-y: auto;
-    /* background-image: url(../../../assets/wall1.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 100%;
+    border-bottom: 1px solid #414650;
+    border-top: 1px solid #414650;
+    /* justify-content: flex-end; */
+    /* border: 1px solid blue; */
+}
+
+#light .middle {
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 100%;
+    border-bottom: 1px solid #e6ebf5;
+    border-top: 1px solid #e6ebf5;
+    /* justify-content: flex-end; */
+    /* border: 1px solid blue; */
 }

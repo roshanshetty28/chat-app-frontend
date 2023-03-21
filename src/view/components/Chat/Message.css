@@ -1,0 +1,25 @@
+.message-container {
+    width: fit-content;
+    max-width: 400px;
+    word-wrap: break-word;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 3px;
+    color: #d7dde7;
+}
+
+.incoming {
+    background-color: #7269ef;
+}
+
+#light .outgoing {
+    margin-left: auto;
+    background-color: #e6ebf5;
+    color: #3c4145;
+}
+
+#dark .outgoing {
+    margin-left: auto;
+    background-color: #4a545e;
+}

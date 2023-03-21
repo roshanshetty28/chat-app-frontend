@@ -21,7 +21,7 @@ const Favourites = (props: FavouritesProps): JSX.Element => {
         <div className='favourite' onClick={handleChat}>
             <div className='favImgContainer'>
                 <img className='favProfileIcon' src={icon} />
-                <img className='favActiveIcon' src={ActiveIcon} />
+                <div className="active-sign favActiveIcon"></div>
             </div>
             <div className='favNameContainer'>
                 <span className='favName'>{name}</span>

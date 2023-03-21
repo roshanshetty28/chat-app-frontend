@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Contacts.css"
 import { Search } from "react-feather"
 import SingleContact from './SingleContact'
-import Image from "../../../assets/logo512.png"
+import Image from "../../../assets/noProfile.png"
 import Favourites from './Favourites'
 import rosh from "../../../assets/rosh.jpg"
 import SearchResult from './SearchResult'
